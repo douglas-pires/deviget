@@ -1,0 +1,25 @@
+<template>
+  <div v-if="post">
+    <h1 class="headline">{{ post.title }}</h1>
+    <h3>by {{ post.author }}</h3>
+    <v-img
+      contain
+      v-if="post.thumbnail"
+      :src="post.thumbnail"
+      max-width="300px"
+    />
+    <div
+      v-if="post.rawData.selftext_html"
+      v-html="post.rawData.selftext_html"
+    ></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "DevPostDetails",
+  props: {
+    post: { type: Object, default: () => {} }
+  }
+};
+</script>
