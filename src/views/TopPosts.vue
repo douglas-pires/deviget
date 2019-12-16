@@ -1,9 +1,12 @@
 <template>
-  <div v-touch:swipe.right="mutToggleMenu" class="top-posts__wrapper">
+  <div
+    v-touch:swipe.right="$device.isMobile ? mutToggleMenu : null"
+    class="top-posts__wrapper"
+  >
     <div class="d-flex">
       <transition name="slide-fade">
         <dev-post-list
-          v-touch:swipe.left="mutToggleMenu"
+          v-touch:swipe.left="$device.isMobile ? mutToggleMenu : null"
           :class="{
             'pt-10': $device.isMobile
           }"
@@ -99,6 +102,9 @@ export default {
 
 <style lang="scss">
 .top-posts {
+  &__wrapper {
+    height: 100vh;
+  }
   &__menu-button {
     position: absolute;
     z-index: 1;

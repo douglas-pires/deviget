@@ -50,6 +50,6 @@ export default {
     state[types.STATE_TOP_POSTS] = [];
   },
   [types.MUT_TOGGLE_MENU](state) {
-    state[types.STATE_MENU] = !state[types.MENU];
+    state[types.STATE_MENU] = !state[types.STATE_MENU];
   }
 };
