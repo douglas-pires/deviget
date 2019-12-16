@@ -1,6 +1,6 @@
 <template>
   <div v-if="post">
-    <h1 class="title">{{ post.title }}</h1>
+    <h1>{{ post.title }}</h1>
     <h3 class="mt-2 subtitle-1 font-italic">by {{ post.author }}</h3>
     <v-img
       contain
