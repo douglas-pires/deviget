@@ -1,9 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import TopPosts from "./routes/TopPosts";
 
 Vue.use(VueRouter);
 
-const routes = [];
+const routes = [TopPosts];
 
 const router = new VueRouter({
   mode: "history",
