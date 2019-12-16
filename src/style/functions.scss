@@ -1,5 +1,8 @@
 $--total-margin-items: 5;
 
+// Just an example on how functions can be applied.
+// In this case, for adding margin class helper
+
 @for $i from 1 through $--total-margin-items {
   .ml-#{$i} {
     margin-left: #{($i * 5)}px;
