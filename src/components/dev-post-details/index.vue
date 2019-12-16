@@ -1,12 +1,13 @@
 <template>
   <div v-if="post">
-    <h1 class="headline">{{ post.title }}</h1>
-    <h3>by {{ post.author }}</h3>
+    <h1>{{ post.title }}</h1>
+    <h3 class="mt-2">by {{ post.author }}</h3>
     <v-img
       contain
       v-if="post.thumbnail"
       :src="post.thumbnail"
       max-width="300px"
+      class="mt-2"
     />
     <div
       v-if="post.rawData.selftext_html"
