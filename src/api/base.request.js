@@ -4,6 +4,12 @@ const defaultInit = {
   method: "GET"
 };
 
+/**
+ *
+ * @param {init} init - An init file that can be overwritten defaultInit
+ *
+ * - Since we here are only working with one URL, there's no problem the way I implemented it. But in a more complex scenario, it could be tricky.
+ */
 export default function(init = defaultInit) {
   return fetch(process.env.VUE_APP_BASE_API_URL, {
     ...init,
