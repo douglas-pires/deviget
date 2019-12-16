@@ -78,6 +78,7 @@ export default {
     background-color: #000;
     color: #fff;
     position: relative;
+    overflow: hidden;
     height: 100vh;
   }
   &__list {
@@ -88,7 +89,7 @@ export default {
     position: sticky;
     height: 50px;
     background-color: #000;
-    bottom: 0;
+    bottom: -20px;
     width: 100%;
     cursor: pointer;
   }
