@@ -100,11 +100,11 @@ export default {
 }
 
 .list-item {
-  transition: all 1s;
+  transition: all 0.3s;
 }
 .list-enter-active,
 .list-leave-active {
-  transition: all 1s;
+  transition: all 0.3s;
 }
 .list-enter,
 .list-leave-to {
